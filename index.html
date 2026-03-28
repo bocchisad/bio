@@ -9,20 +9,18 @@
 
     <style>
         :root {
-            --bg: #000000;               /* чисто черный фон */
+            --bg: #000000;               
             --card-bg: rgba(15, 15, 15, 0.65);
-            --accent: #2c2c2c;           /* нейтральный серый акцент */
+            --accent: #2c2c2c;           
             --text: #f0f0f0;
             --text-dim: #a8a8a8;
         }
 
-        /* Быстрая загрузка страницы */
         @keyframes fastLoad {
             0% { opacity: 0; filter: blur(15px); transform: scale(1.02); }
             100% { opacity: 1; filter: blur(0); transform: scale(1.0); }
         }
 
-        /* Исправленный глитч: в конце замирает в верхней точке, чтобы не было прыжка */
         @keyframes singleGlitch {
             0% { transform: translateY(0) scale(1.02) skewX(0deg); filter: blur(0px); }
             30% { transform: translateY(-6px) scale(1.02) skewX(2deg); filter: blur(1px) brightness(1.2); }
@@ -30,7 +28,6 @@
             100% { transform: translateY(-5px) scale(1.02) skewX(0deg); filter: blur(0px); }
         }
 
-        /* Глитч для кнопок соцсетей */
         @keyframes btnGlitch {
             0% { transform: translateY(0); }
             50% { transform: translateY(-5px) skewX(1deg); }
