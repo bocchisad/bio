@@ -130,8 +130,8 @@ export default function SignalField() {
             }
           }
           const level = n * pulseBoost + ripple
-          if (level < 0.62) continue
-          const alpha = Math.min(0.45, (level - 0.62) * 0.28)
+          if (level < 0.58) continue
+          const alpha = Math.min(0.38, 0.08 + (level - 0.58) * 0.32)
           ctx.fillStyle = `rgba(61, 206, 176, ${alpha})`
           const size = ripple > 0.2 ? 2.5 : 2
           ctx.fillRect(x * cell, y * cell, size, size)
