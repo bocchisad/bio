@@ -1,6 +1,6 @@
 # bocchisad / bio
 
-Personal portfolio — ML / CV, two flagships (`cv-desk`, `bin2img-classifier`), EN/RU.
+Personal portfolio — ML / CV + Go tools. Flagships: `cv-desk`, `bin2img-classifier`, `screen-stream`. Also: `bridge`. EN/RU.
 
 **Live:** https://bocchisad.github.io/bio/
 

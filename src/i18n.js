@@ -24,6 +24,8 @@ export const links = {
   email: 'mailto:vasylia4@gmail.com',
   cvDesk: 'https://github.com/bocchisad/cv-desk',
   bin2img: 'https://github.com/bocchisad/bin2img-classifier',
+  screenStream: 'https://github.com/bocchisad/screen-stream',
+  bridge: 'https://github.com/bocchisad/bridge',
   handDraw: 'https://github.com/bocchisad/hand-draw',
   handDrawDemo: 'https://bocchisad.github.io/hand-draw/',
   cipher: 'https://github.com/bocchisad/Cipher',
@@ -37,10 +39,10 @@ export const copy = {
     htmlLang: 'en',
     nav: { work: 'Work', stack: 'Stack', contact: 'Contact' },
     hero: {
-      kicker: 'ML / CV · Software',
+      kicker: 'ML / CV · Go tools',
       title: 'bocchisad',
       lead:
-        'Student building real-time computer vision, binary visualization tooling, and small full-stack products.',
+        'Student building real-time computer vision, ML tooling, and Go networking — from gesture desk control to P2P screen capture and LAN file transfer.',
       ctaGithub: 'GitHub',
       ctaTelegram: 'Telegram',
       ctaEmail: 'Email',
@@ -49,7 +51,7 @@ export const copy = {
       index: '01',
       title: 'What I work on',
       body:
-        'Real-time CV with MediaPipe and OpenCV, Python services with FastAPI, and networking toys in Go and WebRTC. Participant in the Main Stage of the international youth AI Challenge.',
+        'Real-time CV with MediaPipe and OpenCV, Python services with FastAPI, and systems toys in Go — WebRTC, local hubs, and cross-device tools. Participant in the Main Stage of the international youth AI Challenge.',
     },
     flagships: [
       {
@@ -94,11 +96,37 @@ export const copy = {
         href: links.bin2img,
         hrefLabel: 'github.com/bocchisad/bin2img-classifier',
       },
+      {
+        id: 'screen-stream',
+        index: '04',
+        kicker: 'Flagship · Go / P2P',
+        title: 'screen-stream',
+        lead:
+          'Privacy-preserving, low-latency screen capture delivered over P2P — Go + cgo + pion WebRTC, DirtyPacket or hardware H.264, local hub (no cloud), TOFU identity pins.',
+        problemTitle: 'Why it exists',
+        problem:
+          'Most screen-share stacks assume a cloud SFU and soft trust. screen-stream keeps signaling local, encrypts the path end-to-end, and optionally redacts PII — built to study capture + realtime systems without renting someone else’s relay.',
+        pointsTitle: 'What it covers',
+        points: [
+          'Capture: ScreenCaptureKit (macOS), PipeWire/X11 (Linux), DXGI (Windows)',
+          'Transport: WebRTC DataChannel DirtyPackets or HW H.264 tracks',
+          'Local HTTP hub + token auth; optional STUN; TOFU fingerprints',
+          'PII / OCR hooks (Vision / Tesseract) when you want them',
+        ],
+        stack: ['Go', 'WebRTC', 'cgo', 'PipeWire', 'SCK'],
+        href: links.screenStream,
+        hrefLabel: 'github.com/bocchisad/screen-stream',
+      },
     ],
     also: {
-      index: '04',
+      index: '05',
       title: 'Also building',
       items: [
+        {
+          name: 'bridge',
+          text: 'Mac ↔ Linux file transfer over LAN / optional self-hosted relay — Go daemon, CLI menu, system tray, PIN pairing, E2E TLS.',
+          href: links.bridge,
+        },
         {
           name: 'hand-draw',
           text: 'Air-draw with webcam: MediaPipe Hands + Face, brushes, dual-hand palette, voice, symmetry.',
@@ -116,24 +144,24 @@ export const copy = {
           href: links.minelink,
         },
         {
-          name: 'video-downloader',
-          text: 'Web video downloader — Express + yt-dlp backend, static frontend.',
-          href: links.videoDownloader,
-        },
-        {
           name: 'steam-price-parcer-api',
           text: 'FastAPI Steam price tracker / history API.',
           href: links.steamPrice,
         },
+        {
+          name: 'video-downloader',
+          text: 'Web video downloader — Express + yt-dlp backend, static frontend.',
+          href: links.videoDownloader,
+        },
       ],
     },
     stack: {
-      index: '05',
+      index: '06',
       title: 'Stack',
-      lead: 'Tools I reach for across CV, ML, and small products.',
+      lead: 'Tools I reach for across CV, ML, and networking.',
       items: [
         ['Python', 'Scripts, CV, training, APIs'],
-        ['Go', 'Networking, tunnels, services'],
+        ['Go', 'Networking, capture, P2P tools'],
         ['JavaScript', 'Frontends and Node tooling'],
         ['MediaPipe', 'Hands / Face real-time tracking'],
         ['OpenCV', 'Vision pipelines and heatmaps'],
@@ -147,7 +175,7 @@ export const copy = {
       ],
     },
     contact: {
-      index: '06',
+      index: '07',
       title: 'Contact',
       lead: 'GitHub for code, Telegram for chat, email for longer notes.',
       labels: {
@@ -161,10 +189,10 @@ export const copy = {
     htmlLang: 'ru',
     nav: { work: 'Работы', stack: 'Стек', contact: 'Связь' },
     hero: {
-      kicker: 'ML / CV · Software',
+      kicker: 'ML / CV · Go tools',
       title: 'bocchisad',
       lead:
-        'Студент: real-time компьютерное зрение, визуализация бинарников и небольшие full-stack продукты.',
+        'Студент: real-time компьютерное зрение, ML-тулинг и Go-сеть — от жестового desk-control до P2P screen capture и передачи файлов по LAN.',
       ctaGithub: 'GitHub',
       ctaTelegram: 'Telegram',
       ctaEmail: 'Email',
@@ -173,7 +201,7 @@ export const copy = {
       index: '01',
       title: 'Чем занимаюсь',
       body:
-        'Real-time CV на MediaPipe и OpenCV, Python-сервисы на FastAPI, сетевые штуки на Go и WebRTC. Участник Main Stage международного молодёжного AI Challenge.',
+        'Real-time CV на MediaPipe и OpenCV, Python-сервисы на FastAPI и системные штуки на Go — WebRTC, локальные hub’ы и кросс-девайс тулы. Участник Main Stage международного молодёжного AI Challenge.',
     },
     flagships: [
       {
@@ -218,11 +246,37 @@ export const copy = {
         href: links.bin2img,
         hrefLabel: 'github.com/bocchisad/bin2img-classifier',
       },
+      {
+        id: 'screen-stream',
+        index: '04',
+        kicker: 'Флагман · Go / P2P',
+        title: 'screen-stream',
+        lead:
+          'Приватный low-latency screen capture по P2P — Go + cgo + pion WebRTC, DirtyPacket или аппаратный H.264, локальный hub без облака, TOFU-пины идентичности.',
+        problemTitle: 'Зачем',
+        problem:
+          'Обычный screen-share тянет облачный SFU и чужой trust model. screen-stream держит signaling локально, шифрует путь end-to-end и опционально режет PII — чтобы разобрать capture + realtime без аренды чужого relay.',
+        pointsTitle: 'Что закрывает',
+        points: [
+          'Capture: ScreenCaptureKit (macOS), PipeWire/X11 (Linux), DXGI (Windows)',
+          'Транспорт: WebRTC DataChannel DirtyPacket или HW H.264',
+          'Локальный HTTP hub + token; опциональный STUN; TOFU fingerprints',
+          'Хуки PII / OCR (Vision / Tesseract) по желанию',
+        ],
+        stack: ['Go', 'WebRTC', 'cgo', 'PipeWire', 'SCK'],
+        href: links.screenStream,
+        hrefLabel: 'github.com/bocchisad/screen-stream',
+      },
     ],
     also: {
-      index: '04',
+      index: '05',
       title: 'Ещё',
       items: [
+        {
+          name: 'bridge',
+          text: 'Передача файлов Mac ↔ Linux по LAN / optional self-hosted relay — Go daemon, CLI-меню, tray, PIN-pairing, E2E TLS.',
+          href: links.bridge,
+        },
         {
           name: 'hand-draw',
           text: 'Рисование в воздухе с веб-камеры: MediaPipe Hands + Face, кисти, палитра двумя руками, голос, симметрия.',
@@ -240,24 +294,24 @@ export const copy = {
           href: links.minelink,
         },
         {
-          name: 'video-downloader',
-          text: 'Веб-загрузчик видео — Express + yt-dlp, статичный фронт.',
-          href: links.videoDownloader,
-        },
-        {
           name: 'steam-price-parcer-api',
           text: 'FastAPI-трекер цен Steam / история.',
           href: links.steamPrice,
         },
+        {
+          name: 'video-downloader',
+          text: 'Веб-загрузчик видео — Express + yt-dlp, статичный фронт.',
+          href: links.videoDownloader,
+        },
       ],
     },
     stack: {
-      index: '05',
+      index: '06',
       title: 'Стек',
-      lead: 'Инструменты для CV, ML и небольших продуктов.',
+      lead: 'Инструменты для CV, ML и сети.',
       items: [
         ['Python', 'Скрипты, CV, обучение, API'],
-        ['Go', 'Сеть, туннели, сервисы'],
+        ['Go', 'Сеть, capture, P2P-тулы'],
         ['JavaScript', 'Фронт и Node-утилиты'],
         ['MediaPipe', 'Hands / Face в реальном времени'],
         ['OpenCV', 'Vision-пайплайны и теплокарты'],
@@ -271,7 +325,7 @@ export const copy = {
       ],
     },
     contact: {
-      index: '06',
+      index: '07',
       title: 'Связь',
       lead: 'GitHub — код, Telegram — быстро, email — длиннее.',
       labels: {
